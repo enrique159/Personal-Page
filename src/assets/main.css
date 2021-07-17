@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Aventa";
+  font-weight: 900;
+  font-style: normal;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aventa";
+  font-weight: 800;
+  font-style: normal;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Extra Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aventa";
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aventa";
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Semi Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aventa";
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aventa";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aventa";
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aventa";
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+  src: local("Aventa"), url("/fonts/Aventa Light.ttf") format("truetype");
+}
