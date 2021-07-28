@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>hola</h1>
+    <h1>This place is in maintenance</h1>
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 60vh;
   width: 80%;
   max-width: 1210px;
   justify-content: center;

@@ -9,9 +9,9 @@
         <div id="line2"></div>
       </div>
       <div :class="menu ? 'options active' : 'options'">
-        <router-link to="">
+        <a href="#aboutme" @click="openMenu">
           <h5>Know me</h5>
-        </router-link>
+        </a>
         <router-link to="">
           <h5>My Work</h5>
         </router-link>

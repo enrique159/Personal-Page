@@ -4,7 +4,7 @@
       <img src="@/assets/imgprofileblob.png" class="profile" alt="Profile" />
     </div>
     <h4>
-      Young entrepreneur with solid design and development expertise. I
+      I'm a Front-End Developer with graphic design expertise. I
       build business websites, brands, UI projects and elaborate online
       business services.
     </h4>
@@ -21,7 +21,7 @@ export default {
 .container {
   display: flex;
   flex-direction: row;
-  height: 40vh;
+  height: 60vh;
   width: 90%;
   max-width: 1210px;
   justify-content: center;

@@ -2,9 +2,12 @@
   <div class="home">
     <div class="shape-blob"></div>
     <div class="shape-blob-one"></div>
+    <div class="shape-blob-two"></div>
     <HeaderHome />
+    <div id="aboutme"></div>
     <AboutHome />
     <KnowmeHome />
+    <FooterHome />
   </div>
 </template>
 
@@ -12,9 +15,10 @@
 import HeaderHome from "../components/Header_home.vue";
 import AboutHome from "../components/About_home.vue";
 import KnowmeHome from "../components/Knowme_home.vue";
+import FooterHome from '../components/Footer_home.vue';
 
 export default {
-  components: { HeaderHome, AboutHome, KnowmeHome },
+  components: { HeaderHome, AboutHome, KnowmeHome, FooterHome },
   metaInfo: {
     title: "Enrique",
     titleTemplate: "%s | Web, UI & Brand Design",
@@ -31,6 +35,12 @@ export default {
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  #aboutme {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+  }
 
   .shape-blob {
     background: #ff0066;
@@ -55,6 +65,19 @@ export default {
     transform: rotate(-120deg);
     animation: transform 30s ease-in-out infinite both alternate,
       movement_two 60s ease-in-out infinite both;
+    z-index: -1;
+  }
+
+  .shape-blob-two {
+    background: #c2ff65;
+    height: 400px;
+    width: 400px;
+    border-radius: 30% 50% 20% 40%;
+    position: absolute;
+    right: 100px;
+    top: 120vh;
+    animation: transform 20s ease-in-out infinite both alternate,
+      movement_one 40s ease-in-out infinite both;
     z-index: -1;
   }
 
@@ -98,6 +121,9 @@ export default {
   }
 
   @media only screen and (max-width: 760px) {
+    .shape-blob-two {
+      right: -100px;
+    }
     .shape-blob-one {
       right: -260px;
     }
