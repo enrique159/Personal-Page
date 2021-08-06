@@ -18,9 +18,9 @@
         <router-link to="">
           <h5>Skills</h5>
         </router-link>
-        <router-link to="">
+        <a href="#contactme">
           <h5>Contact</h5>
-        </router-link>
+        </a>
       </div>
     </div>
   </div>
