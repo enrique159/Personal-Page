@@ -4,13 +4,13 @@
       I’m <span>Enrique Marín</span>, a web developer, brander & UI designer
     </h1>
     <div class="options">
-      <router-link to="/" class="option">
+      <router-link to="https://github.com/enrique159/cvresumen/blob/main/resumen_enriquemarin.pdf" target="_blank" class="option">
         <span>cv resume</span>
       </router-link>
       <router-link to="/" class="option">
         <span>portfolio</span>
       </router-link>
-      <router-link to="/" class="option">
+      <router-link to="#contactme" class="option">
         <span>contact</span>
       </router-link>
     </div>
