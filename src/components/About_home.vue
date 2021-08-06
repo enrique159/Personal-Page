@@ -60,7 +60,7 @@ export default {
 
   @media only screen and (max-width: 760px) {
     flex-direction: column;
-    height: 60vh;
+    height: fit-content;
     .myprofile, h4 {
       width: 100%;
     }

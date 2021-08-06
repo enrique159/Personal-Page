@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="socialmedia">
-      <a href="http://www.twitter.com/enriquemarin_mx" target="_blank">
-        <i class="ri-twitter-fill social-icon"></i>
+      <a href="http://www.linkedin.com/in/enriquemarin" target="_blank">
+        <i class="ri-linkedin-fill social-icon"></i>
       </a>
       <a href="https://github.com/enrique159" target="_blank">
         <i class="ri-github-fill social-icon"></i>

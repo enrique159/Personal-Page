@@ -7,6 +7,7 @@
     <div id="aboutme"></div>
     <AboutHome />
     <KnowmeHome />
+    <ContactHome />
     <FooterHome />
   </div>
 </template>
@@ -16,9 +17,10 @@ import HeaderHome from "../components/Header_home.vue";
 import AboutHome from "../components/About_home.vue";
 import KnowmeHome from "../components/Knowme_home.vue";
 import FooterHome from '../components/Footer_home.vue';
+import ContactHome from '../components/Contact_home.vue';
 
 export default {
-  components: { HeaderHome, AboutHome, KnowmeHome, FooterHome },
+  components: { HeaderHome, AboutHome, KnowmeHome, FooterHome, ContactHome },
   metaInfo: {
     title: "Enrique",
     titleTemplate: "%s | Web, UI & Brand Design",
