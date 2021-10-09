@@ -5,7 +5,7 @@
     </h1>
     <div class="options">
       <a href="https://github.com/enrique159/cvresumen/blob/main/resumen_enriquemarin.pdf" target="_blank" class="option">
-        <span>cv resume</span>
+        <span>resume (PDF)</span>
       </a>
       <a href="#" class="option">
         <span>portfolio</span>
