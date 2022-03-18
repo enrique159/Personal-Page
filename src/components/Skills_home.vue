@@ -24,43 +24,85 @@
         <p>Prototypes, UI Kits for Mobile Apps, Websites & custom elements</p>
       </div>
     </div>
-    <h3>Frameworks</h3>
-    <div class="frameworks">
-      <div class="tool">
-        <img src="@/assets/img/vue-logo.svg" alt="" />
-        <span>Vue.js</span>
-      </div>
-      <div class="tool">
-        <img src="@/assets/img/nuxt-logo.svg" alt="" />
-        <span>Nuxt.js</span>
-      </div>
-      <div class="tool">
-        <img
-          src="@/assets/img/node-logo.svg"
-          alt=""
-          style="transform: scale3d(1.2, 1.2, 1.2)"
-        />
-        <span>NodeJs</span>
-      </div>
-      <div class="tool">
-        <img src="@/assets/img/adonis-logo.svg" alt="" />
-        <span>Adonis</span>
-      </div>
-      <div class="tool">
-        <img src="@/assets/img/strapi-logo.svg" alt="" />
-        <span>Strapi</span>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="block">
-        <div class="skills-dev" v-for="item in develop" :key="item.title">
-          <img :src="item.img" alt="" />
-          <div class="infor">
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.description }}</p>
+    <div class="tools-group">
+      <div class="section-tools">
+        <h3>Front End</h3>
+        <div class="frameworks">
+          <div class="tool">
+            <img src="@/assets/img/vue-logo.svg" alt="" />
+            <span>Vue.js</span>
+          </div>
+          <div class="tool">
+            <img src="@/assets/img/nuxt-logo.svg" alt="" />
+            <span>Nuxt.js</span>
           </div>
         </div>
-      </div> -->
+      </div>
+
+      <div class="section-tools">
+        <h3>Back End</h3>
+        <div class="frameworks">
+          <div class="tool">
+            <img
+              src="@/assets/img/node-logo.svg"
+              alt=""
+              style="transform: scale3d(1.2, 1.2, 1.2)"
+            />
+            <span>NodeJs</span>
+          </div>
+          <div class="tool">
+            <img src="@/assets/img/adonis-logo.svg" alt="" />
+            <span>Adonis</span>
+          </div>
+          <div class="tool">
+            <img src="@/assets/img/strapi-logo.svg" alt="" />
+            <span>Strapi</span>
+          </div>
+           <div class="tool">
+            <img src="@/assets/img/mysql-logo.svg" alt="" />
+            <span>MySql</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tools">
+        <h3>Deploy</h3>
+        <div class="frameworks">
+          <div class="tool">
+            <img
+              src="@/assets/img/nginx-logo.svg"
+            />
+            <span>Nginx</span>
+          </div>
+          <div class="tool">
+            <img src="@/assets/img/netlify-logo.svg" alt="" />
+            <span>Netlify</span>
+          </div>
+          <div class="tool">
+            <img src="@/assets/img/digitalocean-logo.svg" alt="" />
+            <span>Digital<br>Ocean</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tools">
+        <h3>Design</h3>
+        <div class="frameworks">
+          <div class="tool">
+            <img
+              src="@/assets/img/figma-logo.svg"
+              alt=""
+            />
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 style="margin: 48px 0 0;">Other tools</h3>
+    <p class="other-tools">
+      Visual Studio Code, Github, Heroku, MongoDB, Adobe Xd, Insomnia, Vercel, AWS.
+    </p>
+  </div>
 </template>
 
 <script>
@@ -148,24 +190,42 @@ export default {
     }
   }
 
-  .frameworks {
+  .tools-group {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
-    column-gap: 3rem;
+    flex-wrap: wrap;
+    column-gap: 7rem;
+    .section-tools {
+      text-align: center;
+      .frameworks {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 3rem;
 
-    .tool {
-      width: fit-content;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      img {
-        width: 56px;
-        height: 48px;
-        margin-bottom: 8px;
-      }
+        .tool {
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            margin-bottom: 8px;
+          }
+        }
+      }   
     }
+  }
+
+  .other-tools {
+    margin: 12px 0 0;
+    color: #5a5a5a;
+    text-align: center;
+    padding: 0 24px;
   }
 
   @media screen and (max-width: 968px) {
@@ -187,12 +247,11 @@ export default {
     }
     .frameworks {
       column-gap: 1.6rem;
-      .tool {
-        img {
-          width: 44px;
-          height: 36px;
-        }
-      }
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .tools-group {
+      flex-direction: column;
     }
   }
 }

@@ -8,7 +8,7 @@
         <span>resume (PDF)</span>
       </a>
       <a href="https://github.com/enrique159/" class="option">
-        <span>Github</span>
+        <span>github</span>
       </a>
       <a href="#contactme" class="option">
         <span>contact</span>

@@ -119,7 +119,7 @@
         </div>
       </div>
     </div>
-    <p>
+    <p style="margin-top: 36px">
       If you want to see more, check out my
       <a href="https://github.com/enrique159/">Github</a>
     </p>
@@ -234,6 +234,26 @@ export default {
       .card {
         max-width: 580px;
         width: 90%;
+      }
+    }
+  }
+  @media screen and (max-width: 560px) {
+    width: 100%;
+    padding-bottom: 128px;
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .card {
+        max-width: 580px;
+        width: 70%;
+        flex-direction: column;
+        row-gap: 1rem;
+        .card-img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
