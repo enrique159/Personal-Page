@@ -70,38 +70,32 @@ export default {
     },
     sendEmail(e) {
       if (this.validarForm() == true) {
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6Le-oq4eAAAAAC07tw6_HwWW_8eCfaaVg7nW2V9b', {action: 'submit'}).then(function(token) {
-            if(token.success) {
-              this.error = "Sending...🤓";
-              emailjs
-                .sendForm(
-                  "service_93lpf8n",
-                  "template_3vfdrut",
-                  e.target,
-                  "user_I4jbsDl2GilwNoOqmOzAw",
-                  {
-                    name: this.name,
-                    email: this.email,
-                    message: this.message,
-                  }
-                )
-                .then(
-                  (result) => {
-                    this.error = "Message sended!! 🥳";
-                    console.log("SUCCESS!", result.status, result.text);
-                    this.name = "";
-                    this.email = "";
-                    this.message = "";
-                  },
-                  (error) => {
-                    this.error = "Something was wrong 😫";
-                    console.log("FAILED...", error);
-                  }
-                );
+        this.error = "Sending...🤓";
+        emailjs
+          .sendForm(
+            "service_93lpf8n",
+            "template_3vfdrut",
+            e.target,
+            "user_I4jbsDl2GilwNoOqmOzAw",
+            {
+              name: this.name,
+              email: this.email,
+              message: this.message,
             }
-          });
-        });
+          )
+          .then(
+            (result) => {
+              this.error = "Message sended!! 🥳";
+              console.log("SUCCESS!", result.status, result.text);
+              this.name = "";
+              this.email = "";
+              this.message = "";
+            },
+            (error) => {
+              this.error = "Something was wrong 😫";
+              console.log("FAILED...", error);
+            }
+          );
       } else {
         this.error = this.validarForm();
       }
@@ -142,7 +136,6 @@ export default {
         transition: 0.3s ease-in-out;
         font-weight: 500;
         color: #6200ff;
-        cursor: none;
         &:hover {
           color: #00b7ff;
         }
@@ -214,7 +207,8 @@ export default {
     width: 80%;
     height: fit-content;
     flex-direction: column;
-    .UIAsset, .formulario {
+    .UIAsset,
+    .formulario {
       width: 100%;
     }
   }

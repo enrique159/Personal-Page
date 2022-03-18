@@ -12,12 +12,12 @@
         <a href="#aboutme" @click="openMenu">
           <h5>Know me</h5>
         </a>
-        <router-link to="">
+        <a href="#mywork">
           <h5>My Work</h5>
-        </router-link>
-        <router-link to="">
+        </a>
+        <a href="#skills">
           <h5>Skills</h5>
-        </router-link>
+        </a>
         <a href="#contactme">
           <h5>Contact</h5>
         </a>
@@ -96,7 +96,6 @@ export default {
         transition: 0.3s ease-in-out;
         padding: 4px 12px;
         margin: auto 24px;
-        cursor: none;
         color: black;
         h5 {
           margin: 0;

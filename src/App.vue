@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="cursor2"></div>
+    <!-- <div class="cursor2"></div> -->
     <Navbar />
     <router-view />
   </div>
@@ -10,22 +10,22 @@
 import Navbar from "@/components/Navbar";
 export default {
   components: { Navbar },
-  mounted() {
-    const cursor = document.querySelector(".cursor2");
-    document.addEventListener("mousemove", (e) => {
-      cursor.setAttribute(
-        "style",
-        "top: " + (e.clientY - 4) + "px; left: " + (e.clientX - 4) + "px;"
-      );
-    });
+  // mounted() {
+  //   const cursor = document.querySelector(".cursor2");
+  //   document.addEventListener("mousemove", (e) => {
+  //     cursor.setAttribute(
+  //       "style",
+  //       "top: " + (e.clientY - 4) + "px; left: " + (e.clientX - 4) + "px;"
+  //     );
+  //   });
 
-    document.addEventListener("click", () => {
-      cursor.classList.add("expand2");
-      setTimeout(() => {
-        cursor.classList.remove("expand2");
-      }, 500);
-    });
-  },
+  //   document.addEventListener("click", () => {
+  //     cursor.classList.add("expand2");
+  //     setTimeout(() => {
+  //       cursor.classList.remove("expand2");
+  //     }, 500);
+  //   });
+  // },
 };
 </script>
 
@@ -34,7 +34,8 @@ export default {
 
 body {
   margin: 0;
-  cursor: none;
+  //cursor: none;
+  cursor: default;
   scroll-behavior: smooth;
 }
 

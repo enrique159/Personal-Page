@@ -7,8 +7,8 @@
       <a href="https://github.com/enrique159/cvresumen/blob/main/resumen_enriquemarin.pdf" target="_blank" class="option">
         <span>resume (PDF)</span>
       </a>
-      <a href="#" class="option">
-        <span>portfolio</span>
+      <a href="https://github.com/enrique159/" class="option">
+        <span>Github</span>
       </a>
       <a href="#contactme" class="option">
         <span>contact</span>
@@ -46,14 +46,13 @@ export default {
     z-index: 1;
     .option {
       text-decoration: none;
-      transition: 0.3s ease-in-out;
+      transition: 0.2s ease-in-out;
       color: black;
       font-size: 1.2rem;
       font-weight: 600;
       margin-right: 48px;
-      cursor: none;
       &:hover {
-        color: #c2ff65;
+        color: #90d12f;
       }
     }
   }

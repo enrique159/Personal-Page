@@ -6,8 +6,8 @@
     <HeaderHome />
     <div id="aboutme"></div>
     <AboutHome />
-    <KnowmeHome />
-    <SkillsHome />
+    <KnowmeHome id="mywork"/>
+    <SkillsHome id="skills"/>
     <ContactHome />
     <FooterHome />
   </div>

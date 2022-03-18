@@ -37,7 +37,6 @@ export default {
       text-decoration: none;
       justify-content: center;
       align-items: center;
-      cursor: none;
       border-radius: 50%;
       width: 48px;
       height: 48px;
