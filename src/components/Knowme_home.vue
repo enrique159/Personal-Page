@@ -3,6 +3,28 @@
     <h1 class="title">What I've done!</h1>
     <div class="cards">
       <div class="card">
+        <img class="card-img" src="@/assets/LandFinderMexico.jpg" alt="" />
+        <div class="card-info">
+          <div>
+            <h2>LandFinderMéxico</h2>
+            <p>
+              Marketplace for Real Estate investment projects. Using Strapi
+              and MySQL as a CMS.
+            </p>
+            <p class="details">Web Responsive, Bootstrap, BackEnd.</p>
+          </div>
+          <div class="card-options">
+            <a
+              class="card-option"
+              href="https://landfindermexico.com"
+              target="_blank"
+            >
+              <i class="ri-global-line social-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
         <img class="card-img" src="@/assets/FreeLancinio.jpeg" alt="" />
         <div class="card-info">
           <div>
@@ -118,6 +140,35 @@
           </div>
         </div>
       </div>
+      <div class="card">
+        <img class="card-img" src="@/assets/TravelWebsite.jpg" alt="" />
+        <div class="card-info">
+          <div>
+            <h2>Travel Website</h2>
+            <p>
+              Responsive website exercise only
+              with HTML, CSS and JavaScript.
+            </p>
+            <p class="details">HTML, CSS, JavaScript Animations</p>
+          </div>
+          <div class="card-options">
+            <a
+              class="card-option"
+              href="https://travel-website-responsive.vercel.app"
+              target="_blank"
+            >
+              <i class="ri-global-line social-icon"></i>
+            </a>
+            <a
+              class="card-option"
+              href="https://github.com/enrique159/Responsive-Travel-Website"
+              target="_blank"
+            >
+              <i class="ri-github-fill social-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <p style="margin-top: 36px">
       If you want to see more, check out my
@@ -137,7 +188,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  min-height: 100vh;
+  min-height: 120vh;
   width: 80%;
   max-width: 1210px;
   justify-content: center;
