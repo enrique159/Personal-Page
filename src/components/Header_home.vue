@@ -36,6 +36,7 @@ export default {
   .title {
     font-size: 4rem;
     font-weight: 900;
+    mix-blend-mode: difference;
     span {
       color: #4400ff;
     }
